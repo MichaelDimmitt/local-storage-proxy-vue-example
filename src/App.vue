@@ -6,10 +6,27 @@
 </template>
 
 <script>
-
+// import proxy from "../proxy";
 export default {
   name: 'app',
   components: {
+  },
+  data(){
+    return {
+      information: {}
+    };
+  },
+  beforeMount() {
+    // proxy.networkRequest(fetch('https://httpbin.org'))
+    // .then(response => { return response.text(); })
+    // .then(response => {
+    //   this.information = response.data;
+    //   return response.data;
+    // })
+    // .catch(error => { console.log('Get', 'fetch', {error}) })
+    // .finally(() => {
+    //   this.loading = false;
+    // });
   }
 }
 </script>
